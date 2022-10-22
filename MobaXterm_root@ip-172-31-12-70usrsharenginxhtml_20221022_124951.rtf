@@ -1,0 +1,721 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red18\green124\blue155;\red94\green147\blue162;\red170\green85\blue85;\red170\green83\blue170;}
+\viewkind4\uc1\pard\f0\fs20   Cleanup    : ec2-net-utils-1.7.1-1.amzn2.noarch                                                                                                              19/28\cf1\highlight2 
+\par \cf0\highlight0   Cleanup    : cloud-init-19.3-45.amzn2.noarch                                                                                                                 20/28\cf1\highlight2 
+\par \cf0\highlight0   Cleanup    : 2:vim-common-8.2.5172-1.amzn2.0.1.x86_64                                                                                                        21/28\cf1\highlight2 
+\par \cf0\highlight0   Cleanup    : libcrypt-2.26-60.amzn2.x86_64                                                                                                                   22/28\cf1\highlight2 
+\par \cf0\highlight0   Cleanup    : 2:vim-data-8.2.5172-1.amzn2.0.1.noarch                                                                                                          23/28\cf1\highlight2 
+\par \cf0\highlight0   Cleanup    : 2:vim-filesystem-8.2.5172-1.amzn2.0.1.noarch                                                                                                    24/28\cf1\highlight2 
+\par \cf0\highlight0   Cleanup    : glibc-common-2.26-60.amzn2.x86_64                                                                                                               25/28\cf1\highlight2 
+\par \cf0\highlight0   Cleanup    : glibc-minimal-langpack-2.26-60.amzn2.x86_64                                                                                                     26/28\cf1\highlight2 
+\par \cf0\highlight0   Cleanup    : glibc-2.26-60.amzn2.x86_64                                                                                                                      27/28\cf1\highlight2 
+\par \cf0\highlight0   Cleanup    : tzdata-2022d-1.amzn2.0.1.noarch                                                                                                                 28/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 2:vim-enhanced-9.0.475-1.amzn2.0.1.x86_64                                                                                                        1/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : tzdata-2022e-1.amzn2.0.1.noarch                                                                                                                  2/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 2:vim-data-9.0.475-1.amzn2.0.1.noarch                                                                                                            3/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 2:vim-common-9.0.475-1.amzn2.0.1.x86_64                                                                                                          4/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : glibc-all-langpacks-2.26-61.amzn2.x86_64                                                                                                         5/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : cloud-init-19.3-46.amzn2.noarch                                                                                                                  6/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 2:vim-minimal-9.0.475-1.amzn2.0.1.x86_64                                                                                                         7/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 2:vim-filesystem-9.0.475-1.amzn2.0.1.noarch                                                                                                      8/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : glibc-2.26-61.amzn2.x86_64                                                                                                                       9/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libcrypt-2.26-61.amzn2.x86_64                                                                                                                   10/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : glibc-minimal-langpack-2.26-61.amzn2.x86_64                                                                                                     11/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : glibc-common-2.26-61.amzn2.x86_64                                                                                                               12/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : ec2-net-utils-1.7.2-1.amzn2.noarch                                                                                                              13/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : glibc-locale-source-2.26-61.amzn2.x86_64                                                                                                        14/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : ec2-net-utils-1.7.1-1.amzn2.noarch                                                                                                              15/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 2:vim-filesystem-8.2.5172-1.amzn2.0.1.noarch                                                                                                    16/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : glibc-locale-source-2.26-60.amzn2.x86_64                                                                                                        17/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : glibc-2.26-60.amzn2.x86_64                                                                                                                      18/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 2:vim-minimal-8.2.5172-1.amzn2.0.1.x86_64                                                                                                       19/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : tzdata-2022d-1.amzn2.0.1.noarch                                                                                                                 20/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : glibc-common-2.26-60.amzn2.x86_64                                                                                                               21/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : glibc-all-langpacks-2.26-60.amzn2.x86_64                                                                                                        22/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 2:vim-data-8.2.5172-1.amzn2.0.1.noarch                                                                                                          23/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : glibc-minimal-langpack-2.26-60.amzn2.x86_64                                                                                                     24/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 2:vim-enhanced-8.2.5172-1.amzn2.0.1.x86_64                                                                                                      25/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libcrypt-2.26-60.amzn2.x86_64                                                                                                                   26/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : cloud-init-19.3-45.amzn2.noarch                                                                                                                 27/28\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 2:vim-common-8.2.5172-1.amzn2.0.1.x86_64                                                                                                        28/28\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Updated:\cf1\highlight2 
+\par \cf0\highlight0   cloud-init.noarch 0:19.3-46.amzn2                        ec2-net-utils.noarch 0:1.7.2-1.amzn2                glibc.x86_64 0:2.26-61.amzn2\cf1\highlight2 
+\par \cf0\highlight0   glibc-all-langpacks.x86_64 0:2.26-61.amzn2               glibc-common.x86_64 0:2.26-61.amzn2                 glibc-locale-source.x86_64 0:2.26-61.amzn2\cf1\highlight2 
+\par \cf0\highlight0   glibc-minimal-langpack.x86_64 0:2.26-61.amzn2            libcrypt.x86_64 0:2.26-61.amzn2                     tzdata.noarch 0:2022e-1.amzn2.0.1\cf1\highlight2 
+\par \cf0\highlight0   vim-common.x86_64 2:9.0.475-1.amzn2.0.1                  vim-data.noarch 2:9.0.475-1.amzn2.0.1               vim-enhanced.x86_64 2:9.0.475-1.amzn2.0.1\cf1\highlight2 
+\par \cf0\highlight0   vim-filesystem.noarch 2:9.0.475-1.amzn2.0.1              vim-minimal.x86_64 2:9.0.475-1.amzn2.0.1\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Complete!\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ cls\cf1\highlight2 
+\par \cf0\highlight0 -bash: cls: command not found\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ clear\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ sudo yum install tomcat\cf1\highlight2 
+\par \cf0\highlight0 Loaded plugins: extras_suggestions, langpacks, priorities, update-motd\cf1\highlight2 
+\par \cf0\highlight0 Resolving Dependencies\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package tomcat.noarch 0:7.0.76-10.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: tomcat-lib = 7.0.76-10.amzn2.0.2 for package: tomcat-7.0.76-10.amzn2.0.2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: java >= 1:1.6.0 for package: tomcat-7.0.76-10.amzn2.0.2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: apache-commons-pool for package: tomcat-7.0.76-10.amzn2.0.2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: apache-commons-logging for package: tomcat-7.0.76-10.amzn2.0.2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: apache-commons-dbcp for package: tomcat-7.0.76-10.amzn2.0.2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: apache-commons-daemon for package: tomcat-7.0.76-10.amzn2.0.2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: apache-commons-collections for package: tomcat-7.0.76-10.amzn2.0.2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package apache-commons-collections.noarch 0:3.2.1-22.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: jpackage-utils for package: apache-commons-collections-3.2.1-22.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package apache-commons-daemon.x86_64 0:1.0.13-7.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package apache-commons-dbcp.noarch 0:1.4-17.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: mvn(org.apache.geronimo.specs:geronimo-jta_1.1_spec) for package: apache-commons-dbcp-1.4-17.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package apache-commons-logging.noarch 0:1.1.2-7.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: mvn(logkit:logkit) for package: apache-commons-logging-1.1.2-7.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: mvn(log4j:log4j) for package: apache-commons-logging-1.1.2-7.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: mvn(avalon-framework:avalon-framework-api) for package: apache-commons-logging-1.1.2-7.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package apache-commons-pool.noarch 0:1.6-9.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package java-17-amazon-corretto.x86_64 1:17.0.5+8-1.amzn2.1 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: java-17-amazon-corretto-headless(x86-64) = 1:17.0.5+8-1.amzn2.1 for package: 1:java-17-amazon-corretto-17.0.5+8-1.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: giflib for package: 1:java-17-amazon-corretto-17.0.5+8-1.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXtst for package: 1:java-17-amazon-corretto-17.0.5+8-1.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXrandr for package: 1:java-17-amazon-corretto-17.0.5+8-1.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXrender for package: 1:java-17-amazon-corretto-17.0.5+8-1.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXt for package: 1:java-17-amazon-corretto-17.0.5+8-1.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXinerama for package: 1:java-17-amazon-corretto-17.0.5+8-1.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXi for package: 1:java-17-amazon-corretto-17.0.5+8-1.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libX11 for package: 1:java-17-amazon-corretto-17.0.5+8-1.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 ---> Package tomcat-lib.noarch 0:7.0.76-10.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: tomcat-servlet-3.0-api = 7.0.76-10.amzn2.0.2 for package: tomcat-lib-7.0.76-10.amzn2.0.2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: tomcat-jsp-2.2-api = 7.0.76-10.amzn2.0.2 for package: tomcat-lib-7.0.76-10.amzn2.0.2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: tomcat-el-2.2-api = 7.0.76-10.amzn2.0.2 for package: tomcat-lib-7.0.76-10.amzn2.0.2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: ecj >= 1:4.2.1 for package: tomcat-lib-7.0.76-10.amzn2.0.2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package avalon-framework.noarch 0:4.3-10.1.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: xalan-j2 for package: avalon-framework-4.3-10.1.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package avalon-logkit.noarch 0:2.1-14.1.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: jms for package: avalon-logkit-2.1-14.1.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package ecj.x86_64 1:4.5.2-3.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package geronimo-jta.noarch 0:1.1.1-17.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package giflib.x86_64 0:4.1.6-9.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libSM.so.6()(64bit) for package: giflib-4.1.6-9.amzn2.0.2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libICE.so.6()(64bit) for package: giflib-4.1.6-9.amzn2.0.2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 ---> Package java-17-amazon-corretto-headless.x86_64 1:17.0.5+8-1.amzn2.1 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: log4j-cve-2021-44228-cve-mitigations for package: 1:java-17-amazon-corretto-headless-17.0.5+8-1.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: alsa-lib for package: 1:java-17-amazon-corretto-headless-17.0.5+8-1.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: dejavu-sans-mono-fonts for package: 1:java-17-amazon-corretto-headless-17.0.5+8-1.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: dejavu-serif-fonts for package: 1:java-17-amazon-corretto-headless-17.0.5+8-1.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: dejavu-sans-fonts for package: 1:java-17-amazon-corretto-headless-17.0.5+8-1.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: fontconfig for package: 1:java-17-amazon-corretto-headless-17.0.5+8-1.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 ---> Package javapackages-tools.noarch 0:3.4.1-11.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: python-javapackages = 3.4.1-11.amzn2 for package: javapackages-tools-3.4.1-11.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libxslt for package: javapackages-tools-3.4.1-11.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libX11.x86_64 0:1.6.7-3.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libX11-common >= 1.6.7-3.amzn2.0.2 for package: libX11-1.6.7-3.amzn2.0.2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libxcb.so.1()(64bit) for package: libX11-1.6.7-3.amzn2.0.2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXi.x86_64 0:1.7.9-1.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXext.so.6()(64bit) for package: libXi-1.7.9-1.amzn2.0.2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXinerama.x86_64 0:1.1.3-2.1.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXrandr.x86_64 0:1.5.1-2.amzn2.0.3 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXrender.x86_64 0:0.9.10-1.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXt.x86_64 0:1.1.5-3.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXtst.x86_64 0:1.2.3-1.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package log4j.noarch 0:1.2.17-18.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: mvn(javax.mail:mail) for package: log4j-1.2.17-18.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package tomcat-el-2.2-api.noarch 0:7.0.76-10.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package tomcat-jsp-2.2-api.noarch 0:7.0.76-10.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package tomcat-servlet-3.0-api.noarch 0:7.0.76-10.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package alsa-lib.x86_64 0:1.1.4.1-2.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package dejavu-sans-fonts.noarch 0:2.33-6.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: dejavu-fonts-common = 2.33-6.amzn2 for package: dejavu-sans-fonts-2.33-6.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package dejavu-sans-mono-fonts.noarch 0:2.33-6.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package dejavu-serif-fonts.noarch 0:2.33-6.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package fontconfig.x86_64 0:2.13.0-4.3.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: fontpackages-filesystem for package: fontconfig-2.13.0-4.3.amzn2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 ---> Package geronimo-jms.noarch 0:1.1.1-19.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package javamail.noarch 0:1.4.6-8.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libICE.x86_64 0:1.0.9-9.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libSM.x86_64 0:1.2.2-2.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libX11-common.noarch 0:1.6.7-3.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXext.x86_64 0:1.3.3-3.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libxcb.x86_64 0:1.12-1.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXau.so.6()(64bit) for package: libxcb-1.12-1.amzn2.0.2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libxslt.x86_64 0:1.1.28-6.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package log4j-cve-2021-44228-hotpatch.noarch 0:1.3-7.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package python-javapackages.noarch 0:3.4.1-11.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: python-lxml for package: python-javapackages-3.4.1-11.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package xalan-j2.noarch 0:2.7.1-23.1.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: xerces-j2 for package: xalan-j2-2.7.1-23.1.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: osgi(org.apache.xerces) for package: xalan-j2-2.7.1-23.1.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package dejavu-fonts-common.noarch 0:2.33-6.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package fontpackages-filesystem.noarch 0:1.44-8.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXau.x86_64 0:1.0.8-2.1.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package python-lxml.x86_64 0:3.2.1-4.amzn2.0.3 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package xerces-j2.noarch 0:2.11.0-17.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: xml-commons-resolver >= 1.2 for package: xerces-j2-2.11.0-17.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: xml-commons-apis >= 1.4.01 for package: xerces-j2-2.11.0-17.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: osgi(org.apache.xml.resolver) for package: xerces-j2-2.11.0-17.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: osgi(javax.xml) for package: xerces-j2-2.11.0-17.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package xml-commons-apis.noarch 0:1.4.01-16.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package xml-commons-resolver.noarch 0:1.2-15.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Finished Dependency Resolution\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dependencies Resolved\cf1\highlight2 
+\par 
+\par \cf0\highlight0 =====================================================================================================================================================================\cf1\highlight2 
+\par \cf0\highlight0  Package                                               Arch                        Version                                     Repository                       Size\cf1\highlight2 
+\par \cf0\highlight0 =====================================================================================================================================================================\cf1\highlight2 
+\par \cf0\highlight0 Installing:\cf1\highlight2 
+\par \cf0\highlight0  tomcat                                                noarch                      7.0.76-10.amzn2.0.2                         amzn2-core                       92 k\cf1\highlight2 
+\par \cf0\highlight0 Installing for dependencies:\cf1\highlight2 
+\par \cf0\highlight0  alsa-lib                                              x86_64                      1.1.4.1-2.amzn2                             amzn2-core                      425 k\cf1\highlight2 
+\par \cf0\highlight0  apache-commons-collections                            noarch                      3.2.1-22.amzn2                              amzn2-core                      509 k\cf1\highlight2 
+\par \cf0\highlight0  apache-commons-daemon                                 x86_64                      1.0.13-7.amzn2                              amzn2-core                       54 k\cf1\highlight2 
+\par \cf0\highlight0  apache-commons-dbcp                                   noarch                      1.4-17.amzn2                                amzn2-core                      167 k\cf1\highlight2 
+\par \cf0\highlight0  apache-commons-logging                                noarch                      1.1.2-7.amzn2                               amzn2-core                       78 k\cf1\highlight2 
+\par \cf0\highlight0  apache-commons-pool                                   noarch                      1.6-9.amzn2                                 amzn2-core                      113 k\cf1\highlight2 
+\par \cf0\highlight0  avalon-framework                                      noarch                      4.3-10.1.amzn2                              amzn2-core                       87 k\cf1\highlight2 
+\par \cf0\highlight0  avalon-logkit                                         noarch                      2.1-14.1.amzn2                              amzn2-core                       87 k\cf1\highlight2 
+\par \cf0\highlight0  dejavu-fonts-common                                   noarch                      2.33-6.amzn2                                amzn2-core                       64 k\cf1\highlight2 
+\par \cf0\highlight0  dejavu-sans-fonts                                     noarch                      2.33-6.amzn2                                amzn2-core                      1.4 M\cf1\highlight2 
+\par \cf0\highlight0  dejavu-sans-mono-fonts                                noarch                      2.33-6.amzn2                                amzn2-core                      433 k\cf1\highlight2 
+\par \cf0\highlight0  dejavu-serif-fonts                                    noarch                      2.33-6.amzn2                                amzn2-core                      777 k\cf1\highlight2 
+\par \cf0\highlight0  ecj                                                   x86_64                      1:4.5.2-3.amzn2.0.2                         amzn2-core                      1.9 M\cf1\highlight2 
+\par \cf0\highlight0  fontconfig                                            x86_64                      2.13.0-4.3.amzn2                            amzn2-core                      253 k\cf1\highlight2 
+\par \cf0\highlight0  fontpackages-filesystem                               noarch                      1.44-8.amzn2                                amzn2-core                       10 k\cf1\highlight2 
+\par \cf0\highlight0  geronimo-jms                                          noarch                      1.1.1-19.amzn2                              amzn2-core                       31 k\cf1\highlight2 
+\par \cf0\highlight0  geronimo-jta                                          noarch                      1.1.1-17.amzn2                              amzn2-core                       21 k\cf1\highlight2 
+\par \cf0\highlight0  giflib                                                x86_64                      4.1.6-9.amzn2.0.2                           amzn2-core                       40 k\cf1\highlight2 
+\par \cf0\highlight0  java-17-amazon-corretto                               x86_64                      1:17.0.5+8-1.amzn2.1                        amzn2-core                      175 k\cf1\highlight2 
+\par \cf0\highlight0  java-17-amazon-corretto-headless                      x86_64                      1:17.0.5+8-1.amzn2.1                        amzn2-core                       94 M\cf1\highlight2 
+\par \cf0\highlight0  javamail                                              noarch                      1.4.6-8.amzn2                               amzn2-core                      757 k\cf1\highlight2 
+\par \cf0\highlight0  javapackages-tools                                    noarch                      3.4.1-11.amzn2                              amzn2-core                       73 k\cf1\highlight2 
+\par \cf0\highlight0  libICE                                                x86_64                      1.0.9-9.amzn2.0.2                           amzn2-core                       67 k\cf1\highlight2 
+\par \cf0\highlight0  libSM                                                 x86_64                      1.2.2-2.amzn2.0.2                           amzn2-core                       39 k\cf1\highlight2 
+\par \cf0\highlight0  libX11                                                x86_64                      1.6.7-3.amzn2.0.2                           amzn2-core                      606 k\cf1\highlight2 
+\par \cf0\highlight0  libX11-common                                         noarch                      1.6.7-3.amzn2.0.2                           amzn2-core                      165 k\cf1\highlight2 
+\par \cf0\highlight0  libXau                                                x86_64                      1.0.8-2.1.amzn2.0.2                         amzn2-core                       29 k\cf1\highlight2 
+\par \cf0\highlight0  libXext                                               x86_64                      1.3.3-3.amzn2.0.2                           amzn2-core                       39 k\cf1\highlight2 
+\par \cf0\highlight0  libXi                                                 x86_64                      1.7.9-1.amzn2.0.2                           amzn2-core                       41 k\cf1\highlight2 
+\par \cf0\highlight0  libXinerama                                           x86_64                      1.1.3-2.1.amzn2.0.2                         amzn2-core                       14 k\cf1\highlight2 
+\par \cf0\highlight0  libXrandr                                             x86_64                      1.5.1-2.amzn2.0.3                           amzn2-core                       27 k\cf1\highlight2 
+\par \cf0\highlight0  libXrender                                            x86_64                      0.9.10-1.amzn2.0.2                          amzn2-core                       26 k\cf1\highlight2 
+\par \cf0\highlight0  libXt                                                 x86_64                      1.1.5-3.amzn2.0.2                           amzn2-core                      177 k\cf1\highlight2 
+\par \cf0\highlight0  libXtst                                               x86_64                      1.2.3-1.amzn2.0.2                           amzn2-core                       20 k\cf1\highlight2 
+\par \cf0\highlight0  libxcb                                                x86_64                      1.12-1.amzn2.0.2                            amzn2-core                      216 k\cf1\highlight2 
+\par \cf0\highlight0  libxslt                                               x86_64                      1.1.28-6.amzn2                              amzn2-core                      240 k\cf1\highlight2 
+\par \cf0\highlight0  log4j                                                 noarch                      1.2.17-18.amzn2                             amzn2-core                      446 k\cf1\highlight2 
+\par \cf0\highlight0  log4j-cve-2021-44228-hotpatch                         noarch                      1.3-7.amzn2                                 amzn2-core                      139 k\cf1\highlight2 
+\par \cf0\highlight0  python-javapackages                                   noarch                      3.4.1-11.amzn2                              amzn2-core                       31 k\cf1\highlight2 
+\par \cf0\highlight0  python-lxml                                           x86_64                      3.2.1-4.amzn2.0.3                           amzn2-core                      1.0 M\cf1\highlight2 
+\par \cf0\highlight0  tomcat-el-2.2-api                                     noarch                      7.0.76-10.amzn2.0.2                         amzn2-core                       82 k\cf1\highlight2 
+\par \cf0\highlight0  tomcat-jsp-2.2-api                                    noarch                      7.0.76-10.amzn2.0.2                         amzn2-core                       95 k\cf1\highlight2 
+\par \cf0\highlight0  tomcat-lib                                            noarch                      7.0.76-10.amzn2.0.2                         amzn2-core                      3.9 M\cf1\highlight2 
+\par \cf0\highlight0  tomcat-servlet-3.0-api                                noarch                      7.0.76-10.amzn2.0.2                         amzn2-core                      213 k\cf1\highlight2 
+\par \cf0\highlight0  xalan-j2                                              noarch                      2.7.1-23.1.amzn2                            amzn2-core                      1.9 M\cf1\highlight2 
+\par \cf0\highlight0  xerces-j2                                             noarch                      2.11.0-17.amzn2                             amzn2-core                      1.1 M\cf1\highlight2 
+\par \cf0\highlight0  xml-commons-apis                                      noarch                      1.4.01-16.amzn2                             amzn2-core                      227 k\cf1\highlight2 
+\par \cf0\highlight0  xml-commons-resolver                                  noarch                      1.2-15.amzn2                                amzn2-core                      108 k\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Transaction Summary\cf1\highlight2 
+\par \cf0\highlight0 =====================================================================================================================================================================\cf1\highlight2 
+\par \cf0\highlight0 Install  1 Package (+48 Dependent packages)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Total download size: 112 M\cf1\highlight2 
+\par \cf0\highlight0 Installed size: 271 M\cf1\highlight2 
+\par \cf0\highlight0 Is this ok [y/d/N]: y\cf1\highlight2 
+\par \cf0\highlight0 Downloading packages:\cf1\highlight2 
+\par \cf0\highlight0 (1/49): alsa-lib-1.1.4.1-2.amzn2.x86_64.rpm                                                                                                   | 425 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (2/49): apache-commons-collections-3.2.1-22.amzn2.noarch.rpm                                                                                  | 509 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (3/49): apache-commons-daemon-1.0.13-7.amzn2.x86_64.rpm                                                                                       |  54 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (4/49): apache-commons-logging-1.1.2-7.amzn2.noarch.rpm                                                                                       |  78 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (5/49): apache-commons-dbcp-1.4-17.amzn2.noarch.rpm                                                                                           | 167 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (6/49): avalon-framework-4.3-10.1.amzn2.noarch.rpm                                                                                            |  87 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (7/49): apache-commons-pool-1.6-9.amzn2.noarch.rpm                                                                                            | 113 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (8/49): avalon-logkit-2.1-14.1.amzn2.noarch.rpm                                                                                               |  87 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (9/49): dejavu-sans-fonts-2.33-6.amzn2.noarch.rpm                                                                                             | 1.4 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (10/49): dejavu-sans-mono-fonts-2.33-6.amzn2.noarch.rpm                                                                                       | 433 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (11/49): dejavu-fonts-common-2.33-6.amzn2.noarch.rpm                                                                                          |  64 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (12/49): dejavu-serif-fonts-2.33-6.amzn2.noarch.rpm                                                                                           | 777 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (13/49): fontconfig-2.13.0-4.3.amzn2.x86_64.rpm                                                                                               | 253 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (14/49): fontpackages-filesystem-1.44-8.amzn2.noarch.rpm                                                                                      |  10 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (15/49): geronimo-jms-1.1.1-19.amzn2.noarch.rpm                                                                                               |  31 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (16/49): ecj-4.5.2-3.amzn2.0.2.x86_64.rpm                                                                                                     | 1.9 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (17/49): geronimo-jta-1.1.1-17.amzn2.noarch.rpm                                                                                               |  21 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (18/49): giflib-4.1.6-9.amzn2.0.2.x86_64.rpm                                                                                                  |  40 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (19/49): java-17-amazon-corretto-17.0.5+8-1.amzn2.1.x86_64.rpm                                                                                | 175 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (20/49): javamail-1.4.6-8.amzn2.noarch.rpm                                                                                                    | 757 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (21/49): javapackages-tools-3.4.1-11.amzn2.noarch.rpm                                                                                         |  73 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (22/49): libICE-1.0.9-9.amzn2.0.2.x86_64.rpm                                                                                                  |  67 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (23/49): libSM-1.2.2-2.amzn2.0.2.x86_64.rpm                                                                                                   |  39 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (24/49): libX11-1.6.7-3.amzn2.0.2.x86_64.rpm                                                                                                  | 606 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (25/49): libX11-common-1.6.7-3.amzn2.0.2.noarch.rpm                                                                                           | 165 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (26/49): libXau-1.0.8-2.1.amzn2.0.2.x86_64.rpm                                                                                                |  29 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (27/49): libXext-1.3.3-3.amzn2.0.2.x86_64.rpm                                                                                                 |  39 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (28/49): libXi-1.7.9-1.amzn2.0.2.x86_64.rpm                                                                                                   |  41 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (29/49): libXinerama-1.1.3-2.1.amzn2.0.2.x86_64.rpm                                                                                           |  14 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (30/49): libXrandr-1.5.1-2.amzn2.0.3.x86_64.rpm                                                                                               |  27 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (31/49): libXrender-0.9.10-1.amzn2.0.2.x86_64.rpm                                                                                             |  26 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (32/49): libXt-1.1.5-3.amzn2.0.2.x86_64.rpm                                                                                                   | 177 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (33/49): libXtst-1.2.3-1.amzn2.0.2.x86_64.rpm                                                                                                 |  20 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (34/49): libxcb-1.12-1.amzn2.0.2.x86_64.rpm                                                                                                   | 216 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (35/49): libxslt-1.1.28-6.amzn2.x86_64.rpm                                                                                                    | 240 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (36/49): log4j-1.2.17-18.amzn2.noarch.rpm                                                                                                     | 446 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (37/49): log4j-cve-2021-44228-hotpatch-1.3-7.amzn2.noarch.rpm                                                                                 | 139 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (38/49): python-javapackages-3.4.1-11.amzn2.noarch.rpm                                                                                        |  31 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (39/49): python-lxml-3.2.1-4.amzn2.0.3.x86_64.rpm                                                                                             | 1.0 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (40/49): tomcat-7.0.76-10.amzn2.0.2.noarch.rpm                                                                                                |  92 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (41/49): tomcat-el-2.2-api-7.0.76-10.amzn2.0.2.noarch.rpm                                                                                     |  82 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (42/49): tomcat-jsp-2.2-api-7.0.76-10.amzn2.0.2.noarch.rpm                                                                                    |  95 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (43/49): tomcat-lib-7.0.76-10.amzn2.0.2.noarch.rpm                                                                                            | 3.9 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (44/49): tomcat-servlet-3.0-api-7.0.76-10.amzn2.0.2.noarch.rpm                                                                                | 213 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (45/49): xalan-j2-2.7.1-23.1.amzn2.noarch.rpm                                                                                                 | 1.9 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (46/49): xerces-j2-2.11.0-17.amzn2.noarch.rpm                                                                                                 | 1.1 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (47/49): xml-commons-apis-1.4.01-16.amzn2.noarch.rpm                                                                                          | 227 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (48/49): xml-commons-resolver-1.2-15.amzn2.noarch.rpm                                                                                         | 108 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (49/49): java-17-amazon-corretto-headless-17.0.5+8-1.amzn2.1.x86_64.rpm                                                                       |  94 MB  00:00:02\cf1\highlight2 
+\par \cf0\highlight0 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------\cf1\highlight2 
+\par \cf0\highlight0 Total                                                                                                                                 35 MB/s | 112 MB  00:00:03\cf1\highlight2 
+\par \cf0\highlight0 Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 Running transaction test\cf1\highlight2 
+\par \cf0\highlight0 Transaction test succeeded\cf1\highlight2 
+\par \cf0\highlight0 Running transaction\cf1\highlight2 
+\par \cf0\highlight0   Installing : libICE-1.0.9-9.amzn2.0.2.x86_64                                                                                                                  1/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : libSM-1.2.2-2.amzn2.0.2.x86_64                                                                                                                   2/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : fontpackages-filesystem-1.44-8.amzn2.noarch                                                                                                      3/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : dejavu-fonts-common-2.33-6.amzn2.noarch                                                                                                          4/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : dejavu-sans-fonts-2.33-6.amzn2.noarch                                                                                                            5/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : libxslt-1.1.28-6.amzn2.x86_64                                                                                                                    6/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : python-lxml-3.2.1-4.amzn2.0.3.x86_64                                                                                                             7/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : python-javapackages-3.4.1-11.amzn2.noarch                                                                                                        8/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : javapackages-tools-3.4.1-11.amzn2.noarch                                                                                                         9/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : tomcat-servlet-3.0-api-7.0.76-10.amzn2.0.2.noarch                                                                                               10/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : tomcat-jsp-2.2-api-7.0.76-10.amzn2.0.2.noarch                                                                                                   11/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : tomcat-el-2.2-api-7.0.76-10.amzn2.0.2.noarch                                                                                                    12/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : fontconfig-2.13.0-4.3.amzn2.x86_64                                                                                                              13/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : dejavu-serif-fonts-2.33-6.amzn2.noarch                                                                                                          14/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : dejavu-sans-mono-fonts-2.33-6.amzn2.noarch                                                                                                      15/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXau-1.0.8-2.1.amzn2.0.2.x86_64                                                                                                               16/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : libxcb-1.12-1.amzn2.0.2.x86_64                                                                                                                  17/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : alsa-lib-1.1.4.1-2.amzn2.x86_64                                                                                                                 18/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : libX11-common-1.6.7-3.amzn2.0.2.noarch                                                                                                          19/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : libX11-1.6.7-3.amzn2.0.2.x86_64                                                                                                                 20/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXext-1.3.3-3.amzn2.0.2.x86_64                                                                                                                21/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXi-1.7.9-1.amzn2.0.2.x86_64                                                                                                                  22/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXrender-0.9.10-1.amzn2.0.2.x86_64                                                                                                            23/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXrandr-1.5.1-2.amzn2.0.3.x86_64                                                                                                              24/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXtst-1.2.3-1.amzn2.0.2.x86_64                                                                                                                25/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXinerama-1.1.3-2.1.amzn2.0.2.x86_64                                                                                                          26/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXt-1.1.5-3.amzn2.0.2.x86_64                                                                                                                  27/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : giflib-4.1.6-9.amzn2.0.2.x86_64                                                                                                                 28/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : log4j-cve-2021-44228-hotpatch-1.3-7.amzn2.noarch                                                                                                29/49\cf1\highlight2 
+\par \cf0\highlight0 Created symlink from /etc/systemd/system/multi-user.target.wants/log4j-cve-2021-44228-hotpatch.service to /usr/lib/systemd/system/log4j-cve-2021-44228-hotpatch.service.\cf1\highlight2 
+\par \cf0\highlight0   Installing : 1:java-17-amazon-corretto-headless-17.0.5+8-1.amzn2.1.x86_64                                                                                    30/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : 1:java-17-amazon-corretto-17.0.5+8-1.amzn2.1.x86_64                                                                                             31/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : apache-commons-pool-1.6-9.amzn2.noarch                                                                                                          32/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : geronimo-jms-1.1.1-19.amzn2.noarch                                                                                                              33/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : xml-commons-apis-1.4.01-16.amzn2.noarch                                                                                                         34/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : apache-commons-collections-3.2.1-22.amzn2.noarch                                                                                                35/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : xml-commons-resolver-1.2-15.amzn2.noarch                                                                                                        36/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : xalan-j2-2.7.1-23.1.amzn2.noarch                                                                                                                37/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : xerces-j2-2.11.0-17.amzn2.noarch                                                                                                                38/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : javamail-1.4.6-8.amzn2.noarch                                                                                                                   39/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : log4j-1.2.17-18.amzn2.noarch                                                                                                                    40/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : apache-commons-logging-1.1.2-7.amzn2.noarch                                                                                                     41/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : avalon-framework-4.3-10.1.amzn2.noarch                                                                                                          42/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : avalon-logkit-2.1-14.1.amzn2.noarch                                                                                                             43/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : 1:ecj-4.5.2-3.amzn2.0.2.x86_64                                                                                                                  44/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : apache-commons-daemon-1.0.13-7.amzn2.x86_64                                                                                                     45/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : geronimo-jta-1.1.1-17.amzn2.noarch                                                                                                              46/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : apache-commons-dbcp-1.4-17.amzn2.noarch                                                                                                         47/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : tomcat-lib-7.0.76-10.amzn2.0.2.noarch                                                                                                           48/49\cf1\highlight2 
+\par \cf0\highlight0   Installing : tomcat-7.0.76-10.amzn2.0.2.noarch                                                                                                               49/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : tomcat-servlet-3.0-api-7.0.76-10.amzn2.0.2.noarch                                                                                                1/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : tomcat-jsp-2.2-api-7.0.76-10.amzn2.0.2.noarch                                                                                                    2/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : dejavu-serif-fonts-2.33-6.amzn2.noarch                                                                                                           3/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : python-lxml-3.2.1-4.amzn2.0.3.x86_64                                                                                                             4/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : geronimo-jms-1.1.1-19.amzn2.noarch                                                                                                               5/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : tomcat-lib-7.0.76-10.amzn2.0.2.noarch                                                                                                            6/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 1:java-17-amazon-corretto-headless-17.0.5+8-1.amzn2.1.x86_64                                                                                     7/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : xml-commons-apis-1.4.01-16.amzn2.noarch                                                                                                          8/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : javamail-1.4.6-8.amzn2.noarch                                                                                                                    9/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libxcb-1.12-1.amzn2.0.2.x86_64                                                                                                                  10/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : log4j-1.2.17-18.amzn2.noarch                                                                                                                    11/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXext-1.3.3-3.amzn2.0.2.x86_64                                                                                                                12/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libX11-1.6.7-3.amzn2.0.2.x86_64                                                                                                                 13/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : log4j-cve-2021-44228-hotpatch-1.3-7.amzn2.noarch                                                                                                14/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : apache-commons-logging-1.1.2-7.amzn2.noarch                                                                                                     15/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : avalon-logkit-2.1-14.1.amzn2.noarch                                                                                                             16/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : dejavu-fonts-common-2.33-6.amzn2.noarch                                                                                                         17/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 1:ecj-4.5.2-3.amzn2.0.2.x86_64                                                                                                                  18/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libX11-common-1.6.7-3.amzn2.0.2.noarch                                                                                                          19/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : alsa-lib-1.1.4.1-2.amzn2.x86_64                                                                                                                 20/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : xalan-j2-2.7.1-23.1.amzn2.noarch                                                                                                                21/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXau-1.0.8-2.1.amzn2.0.2.x86_64                                                                                                               22/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : avalon-framework-4.3-10.1.amzn2.noarch                                                                                                          23/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libSM-1.2.2-2.amzn2.0.2.x86_64                                                                                                                  24/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXrandr-1.5.1-2.amzn2.0.3.x86_64                                                                                                              25/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXrender-0.9.10-1.amzn2.0.2.x86_64                                                                                                            26/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : apache-commons-collections-3.2.1-22.amzn2.noarch                                                                                                27/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : xml-commons-resolver-1.2-15.amzn2.noarch                                                                                                        28/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : xerces-j2-2.11.0-17.amzn2.noarch                                                                                                                29/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : dejavu-sans-mono-fonts-2.33-6.amzn2.noarch                                                                                                      30/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : dejavu-sans-fonts-2.33-6.amzn2.noarch                                                                                                           31/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : fontconfig-2.13.0-4.3.amzn2.x86_64                                                                                                              32/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : apache-commons-pool-1.6-9.amzn2.noarch                                                                                                          33/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXt-1.1.5-3.amzn2.0.2.x86_64                                                                                                                  34/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : apache-commons-daemon-1.0.13-7.amzn2.x86_64                                                                                                     35/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : giflib-4.1.6-9.amzn2.0.2.x86_64                                                                                                                 36/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXinerama-1.1.3-2.1.amzn2.0.2.x86_64                                                                                                          37/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : python-javapackages-3.4.1-11.amzn2.noarch                                                                                                       38/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXi-1.7.9-1.amzn2.0.2.x86_64                                                                                                                  39/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libxslt-1.1.28-6.amzn2.x86_64                                                                                                                   40/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 1:java-17-amazon-corretto-17.0.5+8-1.amzn2.1.x86_64                                                                                             41/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXtst-1.2.3-1.amzn2.0.2.x86_64                                                                                                                42/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : tomcat-el-2.2-api-7.0.76-10.amzn2.0.2.noarch                                                                                                    43/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : geronimo-jta-1.1.1-17.amzn2.noarch                                                                                                              44/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : fontpackages-filesystem-1.44-8.amzn2.noarch                                                                                                     45/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libICE-1.0.9-9.amzn2.0.2.x86_64                                                                                                                 46/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : javapackages-tools-3.4.1-11.amzn2.noarch                                                                                                        47/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : tomcat-7.0.76-10.amzn2.0.2.noarch                                                                                                               48/49\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : apache-commons-dbcp-1.4-17.amzn2.noarch                                                                                                         49/49\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Installed:\cf1\highlight2 
+\par \cf0\highlight0   tomcat.noarch 0:7.0.76-10.amzn2.0.2\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dependency Installed:\cf1\highlight2 
+\par \cf0\highlight0   alsa-lib.x86_64 0:1.1.4.1-2.amzn2                    apache-commons-collections.noarch 0:3.2.1-22.amzn2            apache-commons-daemon.x86_64 0:1.0.13-7.amzn2\cf1\highlight2 
+\par \cf0\highlight0   apache-commons-dbcp.noarch 0:1.4-17.amzn2            apache-commons-logging.noarch 0:1.1.2-7.amzn2                 apache-commons-pool.noarch 0:1.6-9.amzn2\cf1\highlight2 
+\par \cf0\highlight0   avalon-framework.noarch 0:4.3-10.1.amzn2             avalon-logkit.noarch 0:2.1-14.1.amzn2                         dejavu-fonts-common.noarch 0:2.33-6.amzn2\cf1\highlight2 
+\par \cf0\highlight0   dejavu-sans-fonts.noarch 0:2.33-6.amzn2              dejavu-sans-mono-fonts.noarch 0:2.33-6.amzn2                  dejavu-serif-fonts.noarch 0:2.33-6.amzn2\cf1\highlight2 
+\par \cf0\highlight0   ecj.x86_64 1:4.5.2-3.amzn2.0.2                       fontconfig.x86_64 0:2.13.0-4.3.amzn2                          fontpackages-filesystem.noarch 0:1.44-8.amzn2\cf1\highlight2 
+\par \cf0\highlight0   geronimo-jms.noarch 0:1.1.1-19.amzn2                 geronimo-jta.noarch 0:1.1.1-17.amzn2                          giflib.x86_64 0:4.1.6-9.amzn2.0.2\cf1\highlight2 
+\par \cf0\highlight0   java-17-amazon-corretto.x86_64 1:17.0.5+8-1.amzn2.1  java-17-amazon-corretto-headless.x86_64 1:17.0.5+8-1.amzn2.1  javamail.noarch 0:1.4.6-8.amzn2\cf1\highlight2 
+\par \cf0\highlight0   javapackages-tools.noarch 0:3.4.1-11.amzn2           libICE.x86_64 0:1.0.9-9.amzn2.0.2                             libSM.x86_64 0:1.2.2-2.amzn2.0.2\cf1\highlight2 
+\par \cf0\highlight0   libX11.x86_64 0:1.6.7-3.amzn2.0.2                    libX11-common.noarch 0:1.6.7-3.amzn2.0.2                      libXau.x86_64 0:1.0.8-2.1.amzn2.0.2\cf1\highlight2 
+\par \cf0\highlight0   libXext.x86_64 0:1.3.3-3.amzn2.0.2                   libXi.x86_64 0:1.7.9-1.amzn2.0.2                              libXinerama.x86_64 0:1.1.3-2.1.amzn2.0.2\cf1\highlight2 
+\par \cf0\highlight0   libXrandr.x86_64 0:1.5.1-2.amzn2.0.3                 libXrender.x86_64 0:0.9.10-1.amzn2.0.2                        libXt.x86_64 0:1.1.5-3.amzn2.0.2\cf1\highlight2 
+\par \cf0\highlight0   libXtst.x86_64 0:1.2.3-1.amzn2.0.2                   libxcb.x86_64 0:1.12-1.amzn2.0.2                              libxslt.x86_64 0:1.1.28-6.amzn2\cf1\highlight2 
+\par \cf0\highlight0   log4j.noarch 0:1.2.17-18.amzn2                       log4j-cve-2021-44228-hotpatch.noarch 0:1.3-7.amzn2            python-javapackages.noarch 0:3.4.1-11.amzn2\cf1\highlight2 
+\par \cf0\highlight0   python-lxml.x86_64 0:3.2.1-4.amzn2.0.3               tomcat-el-2.2-api.noarch 0:7.0.76-10.amzn2.0.2                tomcat-jsp-2.2-api.noarch 0:7.0.76-10.amzn2.0.2\cf1\highlight2 
+\par \cf0\highlight0   tomcat-lib.noarch 0:7.0.76-10.amzn2.0.2              tomcat-servlet-3.0-api.noarch 0:7.0.76-10.amzn2.0.2           xalan-j2.noarch 0:2.7.1-23.1.amzn2\cf1\highlight2 
+\par \cf0\highlight0   xerces-j2.noarch 0:2.11.0-17.amzn2                   xml-commons-apis.noarch 0:1.4.01-16.amzn2                     xml-commons-resolver.noarch 0:1.2-15.amzn2\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Complete!\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ sudo yum install ngnix\cf1\highlight2 
+\par \cf0\highlight0 Loaded plugins: extras_suggestions, langpacks, priorities, update-motd\cf1\highlight2 
+\par \cf0\highlight0 No package \b ngnix\b0  available.\cf1\highlight2 
+\par \cf0\highlight0 Error: Nothing to do\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ sudo yum install nginx\cf1\highlight2 
+\par \cf0\highlight0 Loaded plugins: extras_suggestions, langpacks, priorities, update-motd\cf1\highlight2 
+\par \cf0\highlight0 No package \b nginx\b0  available.\cf1\highlight2 
+\par \cf0\highlight0 Error: Nothing to do\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 nginx is available in Amazon Linux Extra topic "nginx1"\cf1\highlight2 
+\par 
+\par \cf0\highlight0 To use, run\cf1\highlight2 
+\par \cf0\highlight0 # sudo amazon-linux-extras install nginx1\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Learn more at\cf1\highlight2 
+\par \cf0\highlight0 https://aws.amazon.com/amazon-linux-2/faqs/#Amazon_Linux_Extras\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ sudo amazon-linux-extras install nginx1\cf1\highlight2 
+\par \cf0\highlight0 Installing nginx\cf1\highlight2 
+\par \cf0\highlight0 Loaded plugins: extras_suggestions, langpacks, priorities, update-motd\cf1\highlight2 
+\par \cf0\highlight0 Cleaning repos: amzn2-core amzn2extra-docker amzn2extra-kernel-5.10 amzn2extra-nginx1\cf1\highlight2 
+\par \cf0\highlight0 17 metadata files removed\cf1\highlight2 
+\par \cf0\highlight0 6 sqlite files removed\cf1\highlight2 
+\par \cf0\highlight0 0 metadata files removed\cf1\highlight2 
+\par \cf0\highlight0 Loaded plugins: extras_suggestions, langpacks, priorities, update-motd\cf1\highlight2 
+\par \cf0\highlight0 amzn2-core                                                                                                                                    | 3.7 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 amzn2extra-docker                                                                                                                             | 3.0 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 amzn2extra-kernel-5.10                                                                                                                        | 3.0 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 amzn2extra-nginx1                                                                                                                             | 3.0 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (1/9): amzn2-core/2/x86_64/group_gz                                                                                                           | 2.5 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (2/9): amzn2-core/2/x86_64/updateinfo                                                                                                         | 515 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (3/9): amzn2extra-docker/2/x86_64/updateinfo                                                                                                  | 8.0 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (4/9): amzn2extra-docker/2/x86_64/primary_db                                                                                                  |  96 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (5/9): amzn2extra-nginx1/2/x86_64/updateinfo                                                                                                  |   76 B  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (6/9): amzn2extra-kernel-5.10/2/x86_64/updateinfo                                                                                             |  19 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (7/9): amzn2extra-nginx1/2/x86_64/primary_db                                                                                                  |  48 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (8/9): amzn2extra-kernel-5.10/2/x86_64/primary_db                                                                                             |  12 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (9/9): amzn2-core/2/x86_64/primary_db                                                                                                         |  66 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 Resolving Dependencies\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package nginx.x86_64 1:1.20.0-2.amzn2.0.5 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: nginx-filesystem = 1:1.20.0-2.amzn2.0.5 for package: 1:nginx-1.20.0-2.amzn2.0.5.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: nginx-filesystem for package: 1:nginx-1.20.0-2.amzn2.0.5.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libssl.so.1.1(OPENSSL_1_1_1)(64bit) for package: 1:nginx-1.20.0-2.amzn2.0.5.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libssl.so.1.1(OPENSSL_1_1_0)(64bit) for package: 1:nginx-1.20.0-2.amzn2.0.5.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libcrypto.so.1.1(OPENSSL_1_1_0)(64bit) for package: 1:nginx-1.20.0-2.amzn2.0.5.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libssl.so.1.1()(64bit) for package: 1:nginx-1.20.0-2.amzn2.0.5.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libprofiler.so.0()(64bit) for package: 1:nginx-1.20.0-2.amzn2.0.5.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libcrypto.so.1.1()(64bit) for package: 1:nginx-1.20.0-2.amzn2.0.5.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package gperftools-libs.x86_64 0:2.6.1-1.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package nginx-filesystem.noarch 1:1.20.0-2.amzn2.0.5 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package openssl11-libs.x86_64 1:1.1.1g-12.amzn2.0.9 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: openssl11-pkcs11 for package: 1:openssl11-libs-1.1.1g-12.amzn2.0.9.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package openssl11-pkcs11.x86_64 0:0.4.10-6.amzn2.0.1 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Finished Dependency Resolution\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dependencies Resolved\cf1\highlight2 
+\par 
+\par \cf0\highlight0 =====================================================================================================================================================================\cf1\highlight2 
+\par \cf0\highlight0  Package                                 Arch                          Version                                        Repository                                Size\cf1\highlight2 
+\par \cf0\highlight0 =====================================================================================================================================================================\cf1\highlight2 
+\par \cf0\highlight0 Installing:\cf1\highlight2 
+\par \cf0\highlight0  nginx                                   x86_64                        1:1.20.0-2.amzn2.0.5                           amzn2extra-nginx1                        580 k\cf1\highlight2 
+\par \cf0\highlight0 Installing for dependencies:\cf1\highlight2 
+\par \cf0\highlight0  gperftools-libs                         x86_64                        2.6.1-1.amzn2                                  amzn2-core                               274 k\cf1\highlight2 
+\par \cf0\highlight0  nginx-filesystem                        noarch                        1:1.20.0-2.amzn2.0.5                           amzn2extra-nginx1                         23 k\cf1\highlight2 
+\par \cf0\highlight0  openssl11-libs                          x86_64                        1:1.1.1g-12.amzn2.0.9                          amzn2-core                               1.4 M\cf1\highlight2 
+\par \cf0\highlight0  openssl11-pkcs11                        x86_64                        0.4.10-6.amzn2.0.1                             amzn2-core                                61 k\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Transaction Summary\cf1\highlight2 
+\par \cf0\highlight0 =====================================================================================================================================================================\cf1\highlight2 
+\par \cf0\highlight0 Install  1 Package (+4 Dependent packages)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Total download size: 2.3 M\cf1\highlight2 
+\par \cf0\highlight0 Installed size: 6.6 M\cf1\highlight2 
+\par \cf0\highlight0 Is this ok [y/d/N]: y\cf1\highlight2 
+\par \cf0\highlight0 Downloading packages:\cf1\highlight2 
+\par \cf0\highlight0 (1/5): gperftools-libs-2.6.1-1.amzn2.x86_64.rpm                                                                                               | 274 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (2/5): nginx-filesystem-1.20.0-2.amzn2.0.5.noarch.rpm                                                                                         |  23 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (3/5): openssl11-pkcs11-0.4.10-6.amzn2.0.1.x86_64.rpm                                                                                         |  61 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (4/5): nginx-1.20.0-2.amzn2.0.5.x86_64.rpm                                                                                                    | 580 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (5/5): openssl11-libs-1.1.1g-12.amzn2.0.9.x86_64.rpm                                                                                          | 1.4 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------\cf1\highlight2 
+\par \cf0\highlight0 Total                                                                                                                                8.4 MB/s | 2.3 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 Running transaction test\cf1\highlight2 
+\par \cf0\highlight0 Transaction test succeeded\cf1\highlight2 
+\par \cf0\highlight0 Running transaction\cf1\highlight2 
+\par \cf0\highlight0   Installing : 1:openssl11-libs-1.1.1g-12.amzn2.0.9.x86_64                                                                                                       1/5\cf1\highlight2 
+\par \cf0\highlight0   Installing : openssl11-pkcs11-0.4.10-6.amzn2.0.1.x86_64                                                                                                        2/5\cf1\highlight2 
+\par \cf0\highlight0   Installing : gperftools-libs-2.6.1-1.amzn2.x86_64                                                                                                              3/5\cf1\highlight2 
+\par \cf0\highlight0   Installing : 1:nginx-filesystem-1.20.0-2.amzn2.0.5.noarch                                                                                                      4/5\cf1\highlight2 
+\par \cf0\highlight0   Installing : 1:nginx-1.20.0-2.amzn2.0.5.x86_64                                                                                                                 5/5\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 1:nginx-1.20.0-2.amzn2.0.5.x86_64                                                                                                                 1/5\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : openssl11-pkcs11-0.4.10-6.amzn2.0.1.x86_64                                                                                                        2/5\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 1:nginx-filesystem-1.20.0-2.amzn2.0.5.noarch                                                                                                      3/5\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : gperftools-libs-2.6.1-1.amzn2.x86_64                                                                                                              4/5\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 1:openssl11-libs-1.1.1g-12.amzn2.0.9.x86_64                                                                                                       5/5\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Installed:\cf1\highlight2 
+\par \cf0\highlight0   nginx.x86_64 1:1.20.0-2.amzn2.0.5\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dependency Installed:\cf1\highlight2 
+\par \cf0\highlight0   gperftools-libs.x86_64 0:2.6.1-1.amzn2                 nginx-filesystem.noarch 1:1.20.0-2.amzn2.0.5           openssl11-libs.x86_64 1:1.1.1g-12.amzn2.0.9\cf1\highlight2 
+\par \cf0\highlight0   openssl11-pkcs11.x86_64 0:0.4.10-6.amzn2.0.1\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Complete!\cf1\highlight2 
+\par \cf0\highlight0   0  ansible2                 available    \\\cf1\highlight2 
+\par \cf0\highlight0         [ =2.4.2  =2.4.6  =2.8  =stable ]\cf1\highlight2 
+\par \cf0\highlight0   2  httpd_modules            available    [ =1.0  =stable ]\cf1\highlight2 
+\par \cf0\highlight0   3  memcached1.5             available    \\\cf1\highlight2 
+\par \cf0\highlight0         [ =1.5.1  =1.5.16  =1.5.17 ]\cf1\highlight2 
+\par \cf0\highlight0   6  postgresql10             available    [ =10  =stable ]\cf1\highlight2 
+\par \cf0\highlight0   9  R3.4                     available    [ =3.4.3  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  10  rust1                    available    \\\cf1\highlight2 
+\par \cf0\highlight0         [ =1.22.1  =1.26.0  =1.26.1  =1.27.2  =1.31.0  =1.38.0\cf1\highlight2 
+\par \cf0\highlight0           =stable ]\cf1\highlight2 
+\par \cf0\highlight0  18  libreoffice              available    \\\cf1\highlight2 
+\par \cf0\highlight0         [ =5.0.6.2_15  =5.3.6.1  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  19  gimp                     available    [ =2.8.22 ]\cf1\highlight2 
+\par \cf0\highlight0  20  \cf3 docker=latest            enabled    \cf0   \\\cf1\highlight2 
+\par \cf0\highlight0         [ =17.12.1  =18.03.1  =18.06.1  =18.09.9  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  21  mate-desktop1.x          available    \\\cf1\highlight2 
+\par \cf0\highlight0         [ =1.19.0  =1.20.0  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  22  GraphicsMagick1.3        available    \\\cf1\highlight2 
+\par \cf0\highlight0         [ =1.3.29  =1.3.32  =1.3.34  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  23  tomcat8.5                available    \\\cf1\highlight2 
+\par \cf0\highlight0         [ =8.5.31  =8.5.32  =8.5.38  =8.5.40  =8.5.42  =8.5.50\cf1\highlight2 
+\par \cf0\highlight0           =stable ]\cf1\highlight2 
+\par \cf0\highlight0  24  epel                     available    [ =7.11  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  25  testing                  available    [ =1.0  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  26  ecs                      available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  27  corretto8                available    \\\cf1\highlight2 
+\par \cf0\highlight0         [ =1.8.0_192  =1.8.0_202  =1.8.0_212  =1.8.0_222  =1.8.0_232\cf1\highlight2 
+\par \cf0\highlight0           =1.8.0_242  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  28  firecracker              available    [ =0.11  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  29  golang1.11               available    \\\cf1\highlight2 
+\par \cf0\highlight0         [ =1.11.3  =1.11.11  =1.11.13  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  30  squid4                   available    [ =4  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  32  lustre2.10               available    \\\cf1\highlight2 
+\par \cf0\highlight0         [ =2.10.5  =2.10.8  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  33  java-openjdk11           available    [ =11  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  34  lynis                    available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  36  BCC                      available    [ =0.x  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  37  mono                     available    [ =5.x  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  38  \cf3 nginx1=latest            enabled    \cf0   [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  39  ruby2.6                  available    [ =2.6  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  40  mock                     available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  41  postgresql11             available    [ =11  =stable ]\cf1\highlight2 
+\par \cf0\highlight0  42  php7.4                   available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  43  livepatch                available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  44  python3.8                available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  45  haproxy2                 available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  46  collectd                 available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  47  aws-nitro-enclaves-cli   available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  48  R4                       available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0   _  kernel-5.4               available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  50  selinux-ng               available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  51  php8.0                   available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  52  tomcat9                  available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  53  unbound1.13              available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  54  mariadb10.5              available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  55  \cf3 kernel-5.10=latest       enabled    \cf0   [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  56  redis6                   available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  57  ruby3.0                  available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  58  postgresql12             available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  59  postgresql13             available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  60  mock2                    available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  61  dnsmasq2.85              available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  62  kernel-5.15              available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  63  postgresql14             available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  64  firefox                  available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0  65  lustre                   available    [ =stable ]\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ tomcat\cf1\highlight2 
+\par \cf0\highlight0 Usage: /usr/sbin/tomcat \{start|stop|version\} [server-id]\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ tomcat start\cf1\highlight2 
+\par \cf0\highlight0 Failed to start tomcat.service: The name org.freedesktop.PolicyKit1 was not provided by any .service files\cf1\highlight2 
+\par \cf0\highlight0 See system logs and 'systemctl status tomcat.service' for details.\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ ng\cf1\highlight2 
+\par \cf0\highlight0 ngettext       nginx          nginx-upgrade\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ ng\cf1\highlight2 
+\par \cf0\highlight0 ngettext       nginx          nginx-upgrade\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ nginx .\cf1\highlight2 
+\par \cf0\highlight0 ./             ../            .bash_logout   .bash_profile  .bashrc        .cache/        .ssh/\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ nginx .\cf1\highlight2 
+\par \cf0\highlight0 ./             ../            .bash_logout   .bash_profile  .bashrc        .cache/        .ssh/\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ nginx\cf1\highlight2 
+\par \cf0\highlight0 nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)\cf1\highlight2 
+\par \cf0\highlight0 2022/10/22 07:06:57 [warn] 4717#4717: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:5\cf1\highlight2 
+\par \cf0\highlight0 2022/10/22 07:06:57 [emerg] 4717#4717: mkdir() "/var/lib/nginx/tmp/client_body" failed (13: Permission denied)\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ system ctl status tomcat\cf1\highlight2 
+\par \cf0\highlight0 -bash: system: command not found\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ system tl status tomcat\cf1\highlight2 
+\par \cf0\highlight0 -bash: system: command not found\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ systemctl status tomcat\cf1\highlight2 
+\par \cf0\highlight0\u9679? tomcat.service - Apache Tomcat Web Application Container\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/usr/lib/systemd/system/tomcat.service; disabled; vendor preset: disabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: inactive (dead)\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ systemctl status nginx\cf1\highlight2 
+\par \cf0\highlight0\u9679? nginx.service - The nginx HTTP and reverse proxy server\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/usr/lib/systemd/system/nginx.service; disabled; vendor preset: disabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: inactive (dead)\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ sudo su -\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# systemctl status nginx\cf1\highlight2 
+\par \cf0\highlight0\u9679? nginx.service - The nginx HTTP and reverse proxy server\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/usr/lib/systemd/system/nginx.service; disabled; vendor preset: disabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: inactive (dead)\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# yum install nginx\cf1\highlight2 
+\par \cf0\highlight0 Loaded plugins: extras_suggestions, langpacks, priorities, update-motd\cf1\highlight2 
+\par \cf0\highlight0 Package 1:nginx-1.20.0-2.amzn2.0.5.x86_64 already installed and latest version\cf1\highlight2 
+\par \cf0\highlight0 Nothing to do\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# nginx start\cf1\highlight2 
+\par \cf0\highlight0 nginx: invalid option: "start"\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# tomcat start\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# tomcat status\cf1\highlight2 
+\par \cf0\highlight0 Usage: /usr/sbin/tomcat \{start|stop|version\} [server-id]\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]#\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# tomcat status\cf1\highlight2 
+\par \cf0\highlight0 Usage: /usr/sbin/tomcat \{start|stop|version\} [server-id]\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# echo\cf1\highlight2 
+\par 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# pwd\cf1\highlight2 
+\par \cf0\highlight0 /root\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# ls\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /home/ec2-user/.\cf1\highlight2 
+\par \cf0\highlight0 ./      ../     .cache/ .ssh/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /home/ec2-user\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ec2-user]# ls\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ec2-user]# find /home -type f -name   apache-tomcat\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ec2-user]# cd\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# find /home -type f -name   apache-tomcat\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# tomcat\cf1\highlight2 
+\par \cf0\highlight0 Usage: /usr/sbin/tomcat \{start|stop|version\} [server-id]\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /\cf1\highlight2 
+\par \cf0\highlight0 bin/   boot/  dev/   etc/   home/  lib/   lib64/ local/ media/ mnt/   opt/   proc/  root/  run/   sbin/  srv/   sys/   tmp/   usr/   var/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /\cf1\highlight2 
+\par \cf0\highlight0 bin/   boot/  dev/   etc/   home/  lib/   lib64/ local/ media/ mnt/   opt/   proc/  root/  run/   sbin/  srv/   sys/   tmp/   usr/   var/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /\cf1\highlight2 
+\par \cf0\highlight0 bin/   boot/  dev/   etc/   home/  lib/   lib64/ local/ media/ mnt/   opt/   proc/  root/  run/   sbin/  srv/   sys/   tmp/   usr/   var/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /opt/\cf1\highlight2 
+\par \cf0\highlight0 aws/ rh/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /opt/aws/\cf1\highlight2 
+\par \cf0\highlight0 apitools/ bin/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /opt/aws/apitools/cfn-init\cf1\highlight2 
+\par \cf0\highlight0 cfn-init/        cfn-init-2.0-10/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /usr/\cf1\highlight2 
+\par \cf0\highlight0 bin/     etc/     games/   include/ lib/     lib64/   libexec/ local/   sbin/    share/   src/     tmp/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /usr/\cf1\highlight2 
+\par \cf0\highlight0 bin/     etc/     games/   include/ lib/     lib64/   libexec/ local/   sbin/    share/   src/     tmp/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /usr/s\cf1\highlight2 
+\par \cf0\highlight0 sbin/  share/ src/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /usr/s\cf1\highlight2 
+\par \cf0\highlight0 sbin/  share/ src/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /usr/s\cf1\highlight2 
+\par \cf0\highlight0 sbin/  share/ src/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /usr/share/\cf1\highlight2 
+\par \cf0\highlight0 aclocal/                       games/                         java-1.6.0/                    maven-poms/                    selinux/\cf1\highlight2 
+\par \cf0\highlight0 alsa/                          gcc-7/                         java-1.7.0/                    microcode_ctl/                 setuptool/\cf1\highlight2 
+\par \cf0\highlight0 anaconda/                      gdb/                           java-1.8.0/                    mime/                          sgml/\cf1\highlight2 
+\par \cf0\highlight0 applications/                  GeoIP/                         javadoc/                       mime-info/                     sounds/\cf1\highlight2 
+\par \cf0\highlight0 augeas/                        gettext/                       java-ext/                      misc/                          systemd/\cf1\highlight2 
+\par \cf0\highlight0 authconfig/                    gettext-0.19.8/                java-utils/                    myspell/                       systemtap/\cf1\highlight2 
+\par \cf0\highlight0 awk/                           ghostscript/                   jvm/                           mysql/                         tabset/\cf1\highlight2 
+\par \cf0\highlight0 backgrounds/                   glib-2.0/                      jvm-commmon/                   nano/                          terminfo/\cf1\highlight2 
+\par \cf0\highlight0 bash-completion/               gnome/                         kde4/                          nginx/                         themes/\cf1\highlight2 
+\par \cf0\highlight0 cracklib/                      gnupg/                         keyutils/                      omf/                           tomcat/\cf1\highlight2 
+\par \cf0\highlight0 dbus-1/                        groff/                         langtable/                     os-prober/                     vim/\cf1\highlight2 
+\par \cf0\highlight0 desktop-directories/           grub/                          libdrm/                        p11-kit/                       X11/\cf1\highlight2 
+\par \cf0\highlight0 dict/                          hwdata/                        licenses/                      perl5/                         xml/\cf1\highlight2 
+\par \cf0\highlight0 doc/                           i18n/                          locale/                        pixmaps/                       xsessions/\cf1\highlight2 
+\par \cf0\highlight0 empty/                         icons/                         log4j-cve-2021-44228-hotpatch/ pkgconfig/                     yum-cli/\cf1\highlight2 
+\par \cf0\highlight0 file/                          idl/                           lua/                           pki/                           yum-plugins/\cf1\highlight2 
+\par \cf0\highlight0 firstboot/                     info/                          man/                           plymouth/                      zoneinfo/\cf1\highlight2 
+\par \cf0\highlight0 fontconfig/                    java/                          maven-effective-poms/          polkit-1/                      zsh/\cf1\highlight2 
+\par \cf0\highlight0 fonts/                         java-1.5.0/                    maven-fragments/               screen/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /usr/share/tomcat/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 tomcat]# ls\cf1\highlight2 
+\par \cf3\highlight0 bin\cf0   \cf4 conf\cf0   \cf4 lib\cf0   \cf4 logs\cf0   \cf4 temp\cf0   \cf4 webapps\cf0   \cf4 work\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 tomcat]# cd vin\cf1\highlight2 
+\par \cf0\highlight0 -bash: cd: vin: No such file or directory\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 tomcat]# cd bin\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 bin]# ls\cf1\highlight2 
+\par \cf5\highlight0 bootstrap.jar\cf0   catalina-tasks.xml  \cf5 tomcat-juli.jar\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 bin]# cd ..\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 tomcat]# ls\cf1\highlight2 
+\par \cf3\highlight0 bin\cf0   \cf4 conf\cf0   \cf4 lib\cf0   \cf4 logs\cf0   \cf4 temp\cf0   \cf4 webapps\cf0   \cf4 work\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 tomcat]# ls\cf1\highlight2 
+\par \cf3\highlight0 bin\cf0   \cf4 conf\cf0   \cf4 lib\cf0   \cf4 logs\cf0   \cf4 temp\cf0   \cf4 webapps\cf0   \cf4 work\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 tomcat]# cd ../n\cf1\highlight2 
+\par \cf0\highlight0 nano/  nginx/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 tomcat]# cd ../n\cf1\highlight2 
+\par \cf0\highlight0 nano/  nginx/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 tomcat]# cd ../nginx/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 nginx]# ls\cf1\highlight2 
+\par \cf3\highlight0 html\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 nginx]#  sudo systemctl start nginx.service\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 nginx]# exit\cf1\highlight2 
+\par \cf0\highlight0 logout\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ cd /usr/\cf1\highlight2 
+\par \cf0\highlight0 bin/     etc/     games/   include/ lib/     lib64/   libexec/ local/   sbin/    share/   src/     tmp/\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 ~]$ cd /usr/share/nginx/html/\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 html]$ ls\cf1\highlight2 
+\par \cf0\highlight0 404.html  50x.html  \cf3 icons\cf0   index.html  \cf6 nginx-logo.png\cf0   \cf4 poweredby.png\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 html]$ vi index.html\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-12-70 html]$ sudo su -\cf1\highlight2 
+\par \cf0\highlight0 Last login: Sat Oct 22 07:07:44 UTC 2022 on pts/1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 ~]# cd /usr/share/nginx/html/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 html]# vi index.html\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-12-70 html]#\cf1\highlight2 
+\par \pard\cf0\highlight0\f1 
+\par }
+ 
